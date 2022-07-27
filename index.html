@@ -158,6 +158,115 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://koo070.github.io/2022/07/27/markdown%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kangkang">
+      <meta itemprop="description" content="不管多痛苦，都不要逃往轻松的一边">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小蜗">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/07/27/markdown%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">markdown学习记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-27 21:24:02 / 修改时间：22:21:09" itemprop="dateCreated datePublished" datetime="2022-07-27T21:24:02+08:00">2022-07-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>markdown是一种轻量级的标记语言。(本文用vs2022所写，作者第一篇博客，文笔略显生涩)<br>学习参考<a target="_blank" rel="noopener" href="https://markdown.com.cn/editor/">Markdown.com.cn</a></p>
+<h1 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1 基本语法"></a>1 基本语法</h1><p>我这个时候才刚接触计算机没多久，而且确实用不到那些不常用的语法所以先学一些基本语法，以后如果有需要了再学更全面的markdown语法。</p>
+<h2 id="2-1-标题"><a href="#2-1-标题" class="headerlink" title="2.1 标题"></a>2.1 标题</h2><p>不同数量的<code>#</code>可以完成不同等级的标题，<code>#</code>的数量越多，标题的字就越小。</p>
+<blockquote>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="#一级标题"></a><code>#</code>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="##二级标题"></a><code>##</code>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="###三级标题"></a><code>###</code>三级标题</h3></blockquote>
+<h2 id="2-2-字体"><a href="#2-2-字体" class="headerlink" title="2.2 字体"></a>2.2 字体</h2><p>粗体、斜体、粗体加斜体、删除线，需要在文字前后加不同的标记符号。</p>
+<blockquote>
+<p><strong>这个是粗体</strong> <code>**</code><br><em>这个是斜体</em> <code>*</code><br><em><strong>这个是粗体加斜体</strong></em> <code>***</code><br><del>这里想用删除线</del> <code>~~</code></p>
+</blockquote>
+<p>注：如果想给字体换颜色、换字体或者字体居中显示，需要使用内嵌HTML来实现。(目前我还没有学习的打算)</p>
+<h2 id="2-3-无序列表"><a href="#2-3-无序列表" class="headerlink" title="2.3 无序列表"></a>2.3 无序列表</h2><p>在减号<code>-</code>后加空格。</p>
+<ul>
+<li>第一行</li>
+<li>第二行</li>
+<li>第三行</li>
+</ul>
+<p>通过在<code>-</code>前加空格来控制层级</p>
+<ul>
+<li>第一行</li>
+<li>第二行<ul>
+<li>第三行<ul>
+<li>第四行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-4-有序列表"><a href="#2-4-有序列表" class="headerlink" title="2.4 有序列表"></a>2.4 有序列表</h2><p>数字加<code>.</code>加空格</p>
+<ol>
+<li>第一行</li>
+<li>第二行</li>
+<li>第三行</li>
+</ol>
+<h2 id="2-5-引用"><a href="#2-5-引用" class="headerlink" title="2.5 引用"></a>2.5 引用</h2><p>在<code>&gt;</code>后书写文字</p>
+<blockquote>
+<p>一个人最好的状态就是在得志或者遇到困难时</p>
+</blockquote>
+<blockquote>
+<p>本科生物专业考研零基础跨考<br>计算机，希望我能成功。</p>
+</blockquote>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>用<code>[]()</code>来实现。<br>在<code>[]</code>中写描述，在<code>()</code>中输入链接。</p>
+<p><a href="">点我点我</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://koo070.github.io/2022/07/27/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -172,7 +281,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/07/27/hello-world/" class="post-title-link" itemprop="url">简单介绍</a>
+            <a href="/2022/07/27/hello-world/" class="post-title-link" itemprop="url">Hello World!</a>
         </h2>
 
         <div class="post-meta">
@@ -183,7 +292,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-07-27 13:33:21 / 修改时间：18:16:36" itemprop="dateCreated datePublished" datetime="2022-07-27T13:33:21+08:00">2022-07-27</time>
+              <time title="创建时间：2022-07-27 13:33:21 / 修改时间：21:22:28" itemprop="dateCreated datePublished" datetime="2022-07-27T13:33:21+08:00">2022-07-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -300,20 +409,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
