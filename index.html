@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 6.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"koo070.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"koo070.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":200,"display":"post","padding":50,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="不管多痛苦，都不要逃往轻松的一边">
@@ -131,6 +131,11 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
   </ul>
 </nav>
 
@@ -161,7 +166,7 @@
     <link itemprop="mainEntityOfPage" href="http://koo070.github.io/2022/07/28/hexo%E5%8D%9A%E5%AE%A2%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar_2.jpg">
       <meta itemprop="name" content="kangkang">
       <meta itemprop="description" content="不管多痛苦，都不要逃往轻松的一边">
     </span>
@@ -183,7 +188,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-07-28 00:58:09 / 修改时间：09:10:25" itemprop="dateCreated datePublished" datetime="2022-07-28T00:58:09+08:00">2022-07-28</time>
+              <time title="创建时间：2022-07-28 00:58:09 / 修改时间：09:45:36" itemprop="dateCreated datePublished" datetime="2022-07-28T00:58:09+08:00">2022-07-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -206,28 +211,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="方案步骤"><a href="#方案步骤" class="headerlink" title="方案步骤"></a>方案步骤</h1><h2 id="1-修改配置文件"><a href="#1-修改配置文件" class="headerlink" title="1. 修改配置文件"></a>1. 修改配置文件</h2><p>修改文件_config.yml 里的post_asset_folder:这个选项设置为true<br>这个时候创建新的文章时会在_posts文件下自动生成一个与新建文件同名的文件夹。</p>
-<h2 id="2-准备图片"><a href="#2-准备图片" class="headerlink" title="2. 准备图片"></a>2. 准备图片</h2><p>将要引用的图片放到文件夹<code>hexo博客引用本地图片不显示</code>下。(假设图片名为“01”)<br><img src="/2022/07/28/hexo%E5%8D%9A%E5%AE%A2%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/001.jpg"></p>
-<h2 id="3-安装插件hexo-asset-image"><a href="#3-安装插件hexo-asset-image" class="headerlink" title="3. 安装插件hexo-asset-image"></a>3. 安装插件hexo-asset-image</h2><p>使用以下命令：</p>
-<blockquote>
-<p>npm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save</p>
-</blockquote>
-<p><strong>注意 不要使用<code>npm install hexo-asset-image --save</code>这个命令安装,版本号不对</strong></p>
-<h2 id="4-在md中书写格式（相对路径）"><a href="#4-在md中书写格式（相对路径）" class="headerlink" title="4. 在md中书写格式（相对路径）"></a>4. 在md中书写格式（相对路径）</h2><p>在md使用如下形式引用图片</p>
-<blockquote>
-<p><code>![01](hexo博客引用本地图片不显示/01.jpg)</code></p>
-</blockquote>
-<h2 id="5-md文件名称和图片存放文件夹名称不同时"><a href="#5-md文件名称和图片存放文件夹名称不同时" class="headerlink" title="5. md文件名称和图片存放文件夹名称不同时"></a>5. md文件名称和图片存放文件夹名称不同时</h2><p>注意 重命名md文件之后记得重命名文件夹，当md文件的名称与文件夹名称不同时，映射关系以md文件名称为主。会导致src图片路径找不到</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol>
-<li>检查_config.yml 文件的post_asset_folder:选项是否为true</li>
-<li>将要引用的图片放到文件夹<code>kk</code>下</li>
-<li>安装插件hexo-asset-image</li>
-<li>在md中引用图片</li>
-<li>检查md文件的文件名称和图片存放文件夹名称是否相同</li>
-</ol>
-<hr>
-<p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/Strong997/article/details/97767929?app_version=5.6.0&code=app_1562916241&csdn_share_tail=%7B%22type%22:%22blog%22,%22rType%22:%22article%22,%22rId%22:%2297767929%22,%22source%22:%22m0_70706133%22%7D&ctrtid=XyrxQ&uLinkId=usr1mkqgl919blen">大佬的解决方法</a></p>
-
+          <p>主要原因时是post_asset_folder插件的版本不对</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/28/hexo%E5%8D%9A%E5%AE%A2%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -249,7 +241,7 @@
     <link itemprop="mainEntityOfPage" href="http://koo070.github.io/2022/07/27/markdown%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar_2.jpg">
       <meta itemprop="name" content="kangkang">
       <meta itemprop="description" content="不管多痛苦，都不要逃往轻松的一边">
     </span>
@@ -277,7 +269,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-07-28 09:07:39" itemprop="dateModified" datetime="2022-07-28T09:07:39+08:00">2022-07-28</time>
+                <time title="修改时间：2022-07-28 09:43:12" itemprop="dateModified" datetime="2022-07-28T09:43:12+08:00">2022-07-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -301,70 +293,14 @@
 
       
           <p>markdown是一种轻量级的标记语言。(本文用vs2022所写，作者第一篇博客，文笔略显生涩)<br>学习参考<a target="_blank" rel="noopener" href="https://markdown.com.cn/editor/">Markdown.com.cn</a></p>
-<h1 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1 基本语法"></a>1 基本语法</h1><p>我这个时候才刚接触计算机没多久，而且确实用不到那些不常用的语法所以先学一些基本语法，以后如果有需要了再学更全面的markdown语法。</p>
-<h2 id="2-1-标题"><a href="#2-1-标题" class="headerlink" title="2.1 标题"></a>2.1 标题</h2><p>不同数量的<code>#</code>可以完成不同等级的标题，<code>#</code>的数量越多，标题的字就越小。</p>
-<blockquote>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="#一级标题"></a><code>#</code>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="##二级标题"></a><code>##</code>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="###三级标题"></a><code>###</code>三级标题</h3></blockquote>
-<h2 id="2-2-字体"><a href="#2-2-字体" class="headerlink" title="2.2 字体"></a>2.2 字体</h2><p>粗体、斜体、粗体加斜体、删除线，需要在文字前后加不同的标记符号。</p>
-<blockquote>
-<p><strong>这个是粗体</strong> <code>**</code><br><em>这个是斜体</em> <code>*</code><br><em><strong>这个是粗体加斜体</strong></em> <code>***</code><br><del>这里想用删除线</del> <code>~~</code></p>
-</blockquote>
-<p>注：如果想给字体换颜色、换字体或者字体居中显示，需要使用内嵌HTML来实现。(目前我还没有学习的打算)</p>
-<h2 id="2-3-无序列表"><a href="#2-3-无序列表" class="headerlink" title="2.3 无序列表"></a>2.3 无序列表</h2><p>在减号<code>-</code>后加空格。</p>
-<ul>
-<li>第一行</li>
-<li>第二行</li>
-<li>第三行</li>
-</ul>
-<p>通过在<code>-</code>前加空格来控制层级</p>
-<ul>
-<li>第一行</li>
-<li>第二行<ul>
-<li>第三行<ul>
-<li>第四行</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-4-有序列表"><a href="#2-4-有序列表" class="headerlink" title="2.4 有序列表"></a>2.4 有序列表</h2><p>数字加<code>.</code>加空格</p>
-<ol>
-<li>第一行</li>
-<li>第二行</li>
-<li>第三行</li>
-</ol>
-<h2 id="2-5-引用"><a href="#2-5-引用" class="headerlink" title="2.5 引用"></a>2.5 引用</h2><p>在<code>&gt;</code>后书写文字</p>
-<blockquote>
-<p>一个人最好的状态就是在得志或者遇到困难时</p>
-</blockquote>
-<blockquote>
-<p>本科生物专业考研零基础跨考<br>计算机，希望我能成功。</p>
-</blockquote>
-<h2 id="2-6-链接"><a href="#2-6-链接" class="headerlink" title="2.6 链接"></a>2.6 链接</h2><p>用<code>[这里写图片描述](这里输入链接)</code>来实现。</p>
-<p><a href="https://koo070.github.io/">点我点我</a></p>
-<h2 id="2-7-图片"><a href="#2-7-图片" class="headerlink" title="2.7 图片"></a>2.7 图片</h2><p><code>![这里写图片描述](这里输入链接)</code></p>
-<p><img src="https://pic4.zhimg.com/80/v2-34abc3583a48fa93b98b8b290021ed83_720w.jpg?source=1940ef5c" alt="雷之呼吸，壹型，六连"></p>
-<h2 id="2-9-分割线"><a href="#2-9-分割线" class="headerlink" title="2.9 分割线"></a>2.9 分割线</h2><p>可以在一行中用三个以上的减号<code>---</code>来建立一个分隔线，同时需要在分隔线的上面空一行。如下：</p>
-<hr>
-<h2 id="2-10-表格"><a href="#2-10-表格" class="headerlink" title="2.10 表格"></a>2.10 表格</h2><p>通过<code>|</code>来创造表格，可以使用冒号和减号来定义表格的对齐方式。</p>
-<table>
-<thead>
-<tr>
-<th align="left">姓名</th>
-<th align="center">年龄</th>
-<th align="right">工作</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">康康</td>
-<td align="center">22</td>
-<td align="right">吃饭</td>
-</tr>
-</tbody></table>
-<h3 id="ending"><a href="#ending" class="headerlink" title="ending"></a>ending</h3><p><del>注：插入图片显示不出来的问题后续有时间再解决</del></p>
-<p><img src="/2022/07/27/markdown%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/001.jpg" alt="~~只有网页上的少部分图片可以显示出来~~"></p>
-<hr>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/27/markdown%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -386,7 +322,7 @@
     <link itemprop="mainEntityOfPage" href="http://koo070.github.io/2022/07/27/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar_2.jpg">
       <meta itemprop="name" content="kangkang">
       <meta itemprop="description" content="不管多痛苦，都不要逃往轻松的一边">
     </span>
@@ -406,10 +342,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-07-27 13:33:21 / 修改时间：21:22:28" itemprop="dateCreated datePublished" datetime="2022-07-27T13:33:21+08:00">2022-07-27</time>
+              <time title="创建时间：2022-07-27 13:33:21" itemprop="dateCreated datePublished" datetime="2022-07-27T13:33:21+08:00">2022-07-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-07-28 09:47:00" itemprop="dateModified" datetime="2022-07-28T09:47:00+08:00">2022-07-28</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -432,19 +374,14 @@
 
       
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/27/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -517,6 +454,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="kangkang"
+      src="/images/avatar_2.jpg">
   <p class="site-author-name" itemprop="name">kangkang</p>
   <div class="site-description" itemprop="description">不管多痛苦，都不要逃往轻松的一边</div>
 </div>
@@ -547,6 +486,12 @@
       <span class="links-of-author-item">
         <a href="https://github.com/koo070" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;koo070" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
+      <span class="links-of-author-item">
+        <a href="mailto:blikang@gmail.com" title="E-Mail → mailto:blikang@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://user.qzone.qq.com/1503533542" title="QQ → https:&#x2F;&#x2F;user.qzone.qq.com&#x2F;1503533542" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
   </div>
 
 
@@ -576,7 +521,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">kangkang</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         
@@ -602,7 +547,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
