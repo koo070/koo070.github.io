@@ -81,6 +81,7 @@
   </style>
 </noscript>
 
+   
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -408,7 +409,7 @@
   </div>
 
   
-  <script size="50" alpha="0.3" zIndex="5" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
+  <script color='' opacity='' zIndex='' count='' src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -424,8 +425,6 @@
 <script src="/js/next-boot.js"></script>
 
 
-  <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js"></script>
-    <script defer src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/canvas_lines.min.js"></script>
 
 
   
@@ -448,7 +447,25 @@
 
   
 
-  
+
 </body>
 </html>
 <script type="text/javascript" src="/js/clicklove.js"></script>
+<script>
+//动态标题
+var OriginTitile = document.title,
+titleTime;
+document.addEventListener("visibilitychange",
+function() {
+    if (document.hidden) {
+        document.title = "╭(°A°`)╮ 爱会消失，对吗";
+        clearTimeout(titleTime)
+    } else {
+        document.title = "(ฅ>ω<*ฅ) 逗你的！ " ;
+        titleTime = setTimeout(function() {
+            document.title = OriginTitile
+        },
+        1000)
+    }
+});
+</script>
